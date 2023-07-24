@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Cerro de Historias</title>
+    <link rel="shortcut icon" href="./assets/Img/logo.png">
+    <link rel="stylesheet" href="./assets/Estilos.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./assets/Js/jquery.js"></script>
+    <script src="./assets/Js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+   
+</head>
+
+<body >
+    <!-- (>‿◠) ♬♪♫ -->
+
+    <!-- ============= HEADER ============ -->
+    <header class="menu">
+        <div class="menu-Contenido">
+            <a class="menu-a" href="">UN CERRO DE HISTORIAS</a>
+            <div class="menu-Iconos" >
+                <i class="fa-solid fa-circle-play iconos play" onclick="Play()"></i>
+
+                <div class="Reproductor animate__animated animate__flipInX hide">
+                    <div class="Reproductor_Control">
+                        <div class="Control_Img">
+                            <img class="Img_Cancion" src="https://acegif.com/wp-content/uploads/loading-25.gif" alt=""
+                                onclick="Play()">
+                        </div>
+                        <div class="Reproductor_Control_Contenedor">
+                            <i class="fa-solid fa-circle-pause iconos pausa" onclick="Play()"></i>
+                            <i class="fa-solid fa-volume-high volumen" onclick="mostrarVolumen()"></i>
+
+                            <div class="Control_Volumen">
+                                <input type="range" class="RangoVolumen focused hide" min="1" max="100" value="50"
+                                    orient="vertical" onchange="ControlVolumen();">
+                            </div>
+                        </div>
+                        <div class="Reproductor_Control_P">
+                            <p class="Nombre_Cancion">Cargando...</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Menu_Dos">
+                    <i class="fa-brands fa-facebook iconos"></i>
+                    <i class="fa-brands fa-instagram iconos"></i>
+                    <a onclick="MenuLeft(1)">Home</a>
+                    <span onclick="MenuLeft(5);VerTripulacion(1);">Enviar*</span>
+                </div>
+
+                <div class="burger" onclick="AbriMenuTogle();">
+                    <div class="rect_Uno"></div>
+                    <div class="rect_Dos"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <!-- ============= MENU OCULTO ============ -->
+    <nav class="menu-Oculto">
+        <ul>
+            <li onclick="MenuLeft(1);AbriMenu(1);">HOME</li>
+            <li onclick="MenuLeft(4);AbriMenu(1);">PROGRAMACIÓN</li>
+            <li onclick="MenuLeft(2);AbriMenu(1);">NOTICIAS</li>
+            <li onclick="MenuLeft(3);AbriMenu(1);">PLAYLIST</li>
+            <li onclick="MenuLeft(5);AbriMenu(1);VerTripulacion(4);VerTripulacion(2);">NOSOTROS</li>
+            <li>CONTACTO</li>
+            
+        </ul>
+    </nav>
+
+    <!-- ============= NAV LEFT ============ -->
+    <section class="navegacion-left">
+        <div class="navegacion--left-Barra B-Uno Activo" onclick="MenuLeft(1);AbriMenu(1);"></div>
+        <div class="navegacion--left-Barra B-Cuatro" onclick="MenuLeft(4);AbriMenu(1);"></div>
+        <div class="navegacion--left-Barra B-Dos" onclick="MenuLeft(2);AbriMenu(1);"></div>
+        <div class="navegacion--left-Barra B-Tres"  onclick="MenuLeft(3);AbriMenu(1);"></div>
+        <p class="scrollDown">Creado por Steven Jocz</p>
+    </section>
+
+    <!-- ============= PORTADA ============ -->
+
+    <main class="Portada">
+        <section class="Portada_Uno_Home">
+            <div class="Contenido">
+                <h1 class="animate__animated animate__slideInLeft">CULTURA</h1>
+                <h2 class="animate__animated animate__slideInLeft">INDEPENDIENTE</h2>
+                <div class="contenido-barras cb-Uno animate__animated animate__slideInLeft"></div>
+                <div class="contenido-barras cb-Dos animate__animated animate__slideInLeft"></div>
+                <h3 class="animate__animated animate__slideInLeft">Somos cultura / Somos arte / Somos música.</h3>
+            </div>
+            <div class="Portada_Uno_Home_Animacion">
+                 <img class="Img_Uno_Fondo animate__animated animate__fadeInDown" src="./assets/Img/moonlight.svg" alt="">
+                <img class="Img_Dos_Luna animate__animated animate__slideInRight" src="./assets/Img/moon.svg" alt="">
+                <img class="Img_Uno_Montana animate__animated animate__slideInRight" src="./assets/Img/MONTAÑA2.png" alt="">
+                 <img class="Img_Tres_Nueve_Uno animate__animated animate__slideInRight animate__fast"
+                    src="./assets/Img/b_cloud01.svg" alt="">
+                 <img class="Img_Tres_Nueve_Dos animate__animated animate__slideInRight" src="./assets/Img/b_cloud02.svg"
+                    alt="">
+                   
+                <img class="Img_Tres_Nueve_Oscura_Uno animate__animated animate__slideInRight animate__fast"
+                    src="./assets/Img/cloud1.svg" alt="">
+                <img class="Img_Tres_Nueve_Oscura_Dos animate__animated animate__slideInRight" src="./assets/Img/cloud2.svg"
+                    alt="">
+                <img class="Img_Tres_Nueve_Oscura_Tres animate__animated animate__slideInRight"
+                    src="./assets/Img/cloud3.svg" alt=""> 
+
+    
+            </div>
+        </section>
+    </main>
+     <!-- ============= PROGRAMACION ============ -->
+     <main class="Programacion hide">
+        <Section class="Programacion_Contenedor">
+            <h2 class="Subtitulos animate__animated animate__slideInRight">PROGRAMACIÓN</h2>
+            <section class="show animate__animated animate__slideInLeft">
+               <div class="show_contenido__div">
+                
+               </div>
+                <div class="show_controles show_controles__right">
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+                <div class="show_controles show_controles__left">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                </div>
+                
+            </section>
+            <div class="stripes animate__animated animate__slideInRight">
+                <div style="font-size:12px; font-weight:400;">
+                    **HOY**
+                </div>
+            </div>
+             <!-- ============ HORARIOS DEL DIA ================== -->
+            <section class="show_Horarios animate__animated animate__slideInRight">
+               
+            </section>
+        </Section>
+    </main>
+
+    <!-- ============= NOTICIAS ============ -->
+    <main class="Noticias hide">
+        <section class="Contendor_Dos_Noticias">
+            <div class="Contendor_Dos_Noticias_Contenido ">
+                <h2 class="animate__animated animate__slideInLeft">NOTICIAS</h2>
+                <h1 class="animate__animated animate__slideInLeft">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Ipsam id iusto architecto.</h1>
+                <div class="contenido-barras  contenido-barras_Dos cb-Uno animate__animated animate__slideInLeft">
+                </div>
+            </div>
+            <div class="Contendor_Dos_Noticias_new animate__animated animate__slideInRight animate__fast">
+                <div class="Noticias_new_View_Uno">
+
+                </div>
+                <div class="Noticias_new_View_Dos">
+                    <div class="Noticias_new_View_Dos_C_Uno">
+
+                    </div>
+                    <div class="Noticias_new_View_Dos_C_Dos">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============= TOP PLAYLIST ============ -->
+    <main class="Playlist hide">
+        <div class="Contendor_Dos_Noticias_Contenido Playlist_Titulo">
+            <h2 class="animate__animated animate__slideInLeft">Playlist Recomendadas</h2>
+            <h1 class="animate__animated animate__slideInLeft">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Ipsam id iusto architecto.</h1>
+            <div class="contenido-barras  cb-Uno animate__animated animate__slideInLeft">
+            </div>
+        </div>
+        <section class="Playlist_Contenedor P_Conte__Uno">
+
+        </section>
+        
+    </main>
+
+    <!-- ============= NOSOTROS ============ -->
+    <main class="Nosotros hide">
+        <section class="Nosotros_Contendor">
+            <div class="Advertencia hide">
+                <p>¡Debes completar todos los campos!</p>
+            </div>
+            <div class="Portada_Uno_Home_Animacion AnimacionPortada">
+                <img class="Img_Uno_Fondo animate__animated animate__fadeInDown" src="./assets/Img/moonlight.svg" alt="">
+              
+           </div>
+            <div class="Contendor_Dos_Noticias_Contenido animate__animated animate__slideInLeft">
+                <h2>Música alternativa hasta que te caigas</h2>
+                <div class="contenido-barras  contenido-barras_Dos cb-Uno animate__animated animate__slideInLeft">
+                </div>
+            </div>
+            <div class="Nosotros_Contendor_about animate__animated animate__slideInRight">
+                <p>Radio es una estación de radio por Internet que transmite música alternativa 24/7 con un enfoque principal.
+                    te traemos lo mejor de tus artistas favoritos (y que pronto serán favoritos) de todo el mundo.</p>
+                <br />
+                
+                <p>Desde nuestros orígenes nos hemos convertido en la
+                    estación de radio de internet número 6 y la estación en línea de música alternativo número 1 de medellin.
+                    Con más de 1000 de oyentes cada mes, somos una de las emisoras en línea más populares, y para empezar, buscamos buenos locutores de
+                    radio, ya sea por ocupación o simplemente porque saben cómo rockear.
+                    Para obtener una lista más detallada de nuestros programas. <em onclick="MenuLeft(4);" style="cursor:pointer;">haga clic aquí </em> seguramente encontrará algo de interes para ti.</p>
+                <br />
+                <p>Radio trabaja en estrecha colaboración con los artistas que promocionamos. Los artistas que deseen enviar música para su reproducción al aire  <em onclick="VerTripulacion(1);" style="cursor:pointer;">haga clic aquí </em>  para obtener más información.</p>
+                <div class="stripesDos" onclick="VerTripulacion(3)" >
+                    <div style="font-size:18px; font-weight:900;font-family: futura_m;" class="stripesDos_contenido">
+                        **CONOCE A LA TRIPULACIÓN*
+                    </div>
+                </div>
+            </div>
+            <div class="Nosotros_Contendor_EnviarMusica hide  animate__animated animate__slideInRight">
+                
+                <div class="Nosotros_Contendor_EnviarMusica_Formulario">
+                    <div class="Nosotros_Contendor_EnviarMusica_Atras">
+                        <i class="fa-solid fa-circle-arrow-left" onclick="VerTripulacion(2)" style="cursor: pointer;"></i>
+                    </div>
+                    <h2>Enviar Música</h2>
+                    <p> Miles de oyentes escuchan música nueva y descubren nuevos artistas en Radio cada mes. Radio acepta presentaciones de todos los artistas.</p>
+                    <br>
+                    <p>Para enviar música, complete el formulario a continuación y luego haga clic en el botón "Subir música" para enviar archivos de forma segura a nuestros directores musicales.</p>
+
+                    <div class="EnviarMusica_Formulario_PasoUno">
+                        <h3>INFORMACIÓN DE ENVÍO</h3>
+                        <div class="columna">
+                            <input type="text" class="input w-1 nombreBanda" placeholder="Nombre de la banda o artista*">
+                            <input type="text" class="input w-1 nombreCancion" placeholder="Nombre de la canción*">
+                            <input type="text" class="input w-1 generoMusical" placeholder="Género musical*">
+                        </div>
+                        <div class="columna colboton">
+                            <button onclick="validadFormularios(1);"><i class="fa-solid fa-circle-arrow-right"></i> Continuar</button>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+                <div class="EnviarMusica_Formulario_PasoDos hide">
+                    <div class="Nosotros_Contendor_EnviarMusica_Atras">
+                        <i class="fa-solid fa-circle-arrow-left" onclick="ContinuarFormulario(2)" style="cursor: pointer;"></i>
+                    </div>
+                    <h3>INFORMACIÓN PERSONAL</h3>
+                    <div class="columna">
+                        <input type="text" class="input w-1 nombreAutorizado" placeholder="Nombre/Agente Autorizado*">
+                        <input type="text" class="input w-1 ciudad" placeholder="Ciudad*">
+                        <input type="text" class="input w-1 pais" placeholder="País*">
+                        
+                    </div>
+                    <div class="columna">
+                        <input type="text" class="input w-1 correo" placeholder="Correo electrónico*">
+                        <input type="text" class="input w-1 telefono" placeholder="Teléfono*">
+                        <input type="text" class="input w-1 firma" placeholder="Vuelve a escribir el nombre como firma*">
+                    </div>
+                    <div class="columna">
+                        <input type="checkbox" class="option-input"><i> Acepto los términos del servicio *</i>
+                        
+                    </div>
+                   
+                    <div class="columna colboton">
+                        <button onclick="validadFormularios(2);"><i class="fa-solid fa-circle-arrow-right"></i> Continuar</button>
+                    </div>
+                </div>
+                <div class="EnviarMusica_Formulario_PasoSubirMusica hide">
+                    <div class="Nosotros_Contendor_EnviarMusica_Atras">
+                        <i class="fa-solid fa-circle-arrow-left" onclick="ContinuarFormulario(4)" style="cursor: pointer;"></i>
+                    </div>
+                    <h3>SUBIR MÚSICA</h3>
+                    <p>Prepare sus archivos para cargarlos utilizando la convención de nomenclatura "Artista - Título".</p>
+                    <br>
+                    <p>Se aceptan solo archivos mp3.</p>
+                   <br>
+                   <p>Si es posible, incluya también una identificación de estación o un delineador del artista que podamos usar como parachoques para la canción.</p>
+                   <br>
+                   <p>“Soy [nombre] de [banda], y estás escuchando [canción enviada] en Radio” <br>
+                    “Soy [nombre] de [banda], y estás escuchando a Radio”</p>
+                    <br>
+                    <p>También puede enviar un audio para promocionar una gira, un nuevo lanzamiento, un video, etc.</p>
+                    <div class="columna colboton">
+                        <button><i class="fa-solid fa-paper-plane"></i> Subir música</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Nosotros_Contendor_Equipo hide animate__animated animate__slideInRight">
+                <div class="Nosotros_Contendor_EnviarMusica_Atras">
+                    <i class="fa-solid fa-circle-arrow-left" onclick="VerTripulacion(4)" style="cursor: pointer;"></i>
+                    <div class="Nosotros_Contendor_Equipo_div">
+                        <div class="columna div_Nosotros">
+                            
+                        </div>
+                        <div class="columnaDos">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <!-- (>‿◠) Jocz ♬♪♫ -->
+</body>
+
+</html>

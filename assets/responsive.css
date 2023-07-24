@@ -1,0 +1,1023 @@
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+    /* ======== MENU ====== */
+
+    .menu .menu-a{
+        font-size: 1.5em;
+        margin-left: -50px;
+    }
+
+    .menu-Contenido{
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+        background-color: rgba(10, 10, 10, 0.748);
+    }
+
+    .menu .menu-Iconos{
+        display: block;
+        position: relative;
+        
+    }
+    
+    .Reproductor{
+        width: 100%;
+        position: absolute;
+        top: 150%;
+        left: 0;
+    }
+
+    @keyframes animate1 {
+        from {transform:translate(60%)}
+        to {transform:translate(-100%)}
+        }
+
+    .Reproductor_Control_Contenedor{
+        margin-top: 2px;
+        width: 80px;
+    }
+
+    .play{
+        position: absolute;
+        top: -2%;
+        left: -8%;
+    }
+
+    .pausa{
+        margin-left: 45%;
+        font-size: 1em;
+    }
+    .volumen{
+        display: none;
+    }
+
+    .Reproductor_Control_P{
+        margin-top: 3px;
+    }
+
+    .Menu_Dos{
+        margin-top: 5%;
+        margin-left: -30%;
+    }
+
+    .burger {
+       position: absolute;
+       top: -40%;
+       left: 65%;
+    }
+
+    /* Menu oculto*/
+    .menu-Oculto{
+        z-index: 1000;
+    }
+    .menu-Oculto ul{
+        margin-top: 50%;
+    }
+
+    .menu-Oculto ul li{
+        font-size: 1.7rem;
+    }
+
+
+    /* ======== HOME ====== */
+    .Contenedor{
+        display: block;
+    }
+
+    /* ====== NAVEGACIÓN LEFT ====== */
+
+        .Contenedor .Contenedor_Dos {
+            width: 100%;
+            height: 80px;
+            margin-top: 0;
+        }
+    
+
+        .navegacion-left {
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            display: flex;
+            padding: 0;
+            justify-content:center;
+            bottom: 5%;
+            background-color: rgba(10, 10, 10, 0.189);
+            z-index: 1000;
+            
+        }
+
+        .navegacion--left-Barra{
+            width: 4px;
+            height: 25px;
+        }
+
+        .Activo{
+            height: 40px;
+        }
+
+    /* ====== CONENIDO HOME====== */
+
+    .Portada{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Portada_Uno_Home {
+        width: 100%;
+        display: block;
+        margin: 0;
+       
+    }
+
+    .Portada_Uno_Home .Contenido {
+        width: 100%;
+        top: 55%;
+        left: 0;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .Portada_Uno_Home .Contenido h1 {
+        font-size: 3.8em;
+        margin: 0;
+    }
+
+    .Portada_Uno_Home .Contenido h2 {
+        font-size: 2.8rem;
+        margin: 0;
+    }
+
+    .Portada_Uno_Home .Contenido .h2mas {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .Portada_Uno_Home .Contenido h3 {
+        font-size: 1.2rem;
+    }
+
+    .cb-Uno {
+        margin: 15px 25%;
+        width: 200px;
+    }
+
+    .cb-Dos {
+        margin: 15px 30%;
+        width: 150px;
+    }
+
+    .Portada_Uno_Home_Animacion {
+        width: 95%;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+
+    .Portada_Uno_Home_Animacion .Img_Uno_Fondo {
+        width: 105%;
+        top: 70px;
+        left: 0px;
+    }
+
+    .Portada_Uno_Home_Animacion .Img_Dos_Luna {
+        width: 140px;
+        top: 25%;
+        left: 35%;
+    }
+
+    .Portada_Uno_Home_Animacion .Img_Uno_Montana{
+        width: 700px;
+        top: 25%;
+        left: -35%;
+    }
+
+    .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Uno{
+        width: 250px;
+        top: 20%;
+        left: 5%;
+      }
+
+      .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Dos{
+        width: 250px;
+        top: 18%;
+        left: 60%;
+      }
+
+      .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Uno{
+        width: 250px;
+        top: 40%;
+        left: 45%;
+      }
+
+      .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Dos{
+        width: 300px;
+        top: 37%;
+        left: -25%;
+      }
+
+      .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Tres{
+        width: 120px;
+        top: 33%;
+        left: 60%;
+      }
+
+   
+      
+    /*====== Contenido Noticias ======*/
+        .Noticias {
+            height: auto;
+            margin-left: 0;
+        }
+    
+        .Contendor_Dos_Noticias {
+            padding-top: 50%;
+        }
+    
+        .Contendor_Dos_Noticias_Contenido {
+            text-align: center;
+        }
+    
+        .Contendor_Dos_Noticias_Contenido h2 {
+            font-size: 2.2rem;
+        }
+    
+        .Contendor_Dos_Noticias_Contenido h1 {
+            margin-top: -15px;
+            font-size: 1rem;
+        }
+    
+        .Contendor_Dos_Noticias_new{
+            width: 100%;
+            display: block;
+              
+        }
+
+        .Noticias_new_View_Uno{
+            height: 280px;
+        }
+
+        .Noticias_new_View_Uno_bg{
+            height: 250px;
+        }
+       
+        .Noticias_new_View_Uno img{
+            height: 250px;
+        }
+
+        .Noticias_new_View_Uno_titulo h1{
+            font-size: 0.8em;
+        }
+
+        .Noticias_new_View_Uno_titulo h2{
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .Noticias_new_View_Dos_titulo h1{
+            font-size: 0.8em;  
+        }
+          
+        .Noticias_new_View_Dos_titulo h2{
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+          
+  
+
+
+    /* ====== TOP ====== */
+    .Playlist{
+        width: 98%;
+        margin-left: 0;
+        height: auto;
+    }
+  
+    .Playlist_Titulo {
+        padding-top: 50%;
+    }
+
+    .Playlist_Contenedor{
+        width: 100%;
+        display: block;
+        margin: 1% 2%;
+        margin-bottom: 40%;
+    }
+
+    .Playlist_Contenedor__Contenido{
+        width: 94%;
+        height: 200px;
+        margin-bottom: 20%;
+      }
+        
+    .Playlist_Contenedor__Contenido_Img img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .Playlist_Contenedor__Contenido_gb{
+        width: 100%;
+        height: 200px;
+    }
+
+    /* ====== PROGRAMACION ====== */
+    .Programacion {
+        width: 100%;
+        margin-left: 0%;
+        height: auto;  
+    }
+
+    .Programacion_Contenedor {
+        padding-top: 50%;
+    }
+
+    .Subtitulos {
+        text-align: center;
+    }
+
+    .show {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .show_contenido__div {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .show_contenido {
+        width: 100%;
+        height: 350px;
+        margin-bottom:  2%;
+    }
+
+    .show_controles {
+        position: absolute;
+        top: 100%;
+    }
+
+    .stripes {
+        margin-top: 15%;
+    }
+
+    .show_Horarios {
+        width: 85%;
+        height: auto;
+        margin-bottom: 20%;
+        display: block;
+       
+    }
+    .show_Horarios__Contenido {
+       margin-bottom: 7%;
+       margin-left: 5%;
+       text-align: center;
+    }
+      
+
+     /* ============= NOSOTROS ============ */
+
+     .Nosotros {
+        width: 100vw;
+        padding-top: 40%;
+        margin: 0 0 35% 0;
+        overflow: none;
+        height: auto;
+    }
+
+    .Nosotros_Contendor_about , .Nosotros_Contendor_EnviarMusica , .Nosotros_Contendor_Equipo{
+        margin: 0 2%;
+        width: 85%;
+      }
+
+    .AnimacionPortada{
+        display: none;
+    }
+    
+    .columna{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .columnaDos{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .w-1{
+        margin-bottom: 20px;
+        width: 85%;
+    }
+
+    .stripesDos_contenido{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .Advertencia{
+        width: 100px;
+        height: 30px;
+        font-size: 0.7em;
+        padding: 10px;
+    }
+
+    .Nosotros_Contendor_Equipo_div_Persona {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .scrollDown {
+        position: fixed;
+        font-size: 0.5rem;
+        bottom: 10px;
+        left: 33%;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        -webkit-writing-mode:horizontal-tb;
+        writing-mode:horizontal-tb;
+        color: #fff;
+        
+    }
+
+    .scrollDown::before{
+       display: none;
+      }
+ 
+   /* =========== VISTA DE LAS NOTICIAS ============= */
+   .view_Noticias {
+       width: 100vw;
+       margin-left: 0;
+       display: block;
+   }
+
+   .view_Noticias_Contenedor {
+       width: 100vw;
+       padding-top: 50%;
+   }
+
+   .view_Noticias_Contenedor_Encabezado h1 {
+       font-size: 1.4rem;
+   }
+
+   .view_Noticias_Contenedor_Encabezado img {
+       width: 100%;
+       height: 35vh;
+   }
+
+   .TextCategoria {
+       font-size: 1rem;
+       top: 27%;
+   }
+
+   .view_Noticias_Contenedor_Cuerpo {
+    font-size: 1.2em;
+    text-align:left;
+    margin-bottom: 2%;
+  }
+   .view_Noticias_Contenedor_Encabezado_info {
+    display: flex;
+    margin: 5px 27%;
+  }
+
+  .view_Noticias_Contenedor_Cuerpo iframe{
+    height: 270px;
+  }
+  .view_Noticias_Contenedor_Cuerpo img{
+    height: 270px;
+  }
+
+  .view_Noticias_Recientes {
+    width: 100vw;
+    height: 100vh;
+    position:sticky;
+    left: 0;
+    padding: 0;
+ }
+  
+ 
+ 
+}
+
+@media only screen and (min-width: 576px) and (max-width: 920px) {
+
+    .menu .menu-Iconos{
+        position: relative;
+        
+    }
+    .Reproductor{
+        width: 350px;
+        position: absolute;
+        top: 100%;
+        left: -30%;
+    }
+
+    /* Menu oculto*/
+    .menu-Oculto ul{
+        margin-top: 100px;
+    }
+
+    .menu-Oculto ul li{
+        font-size: 2em;
+        line-height: 0.5;
+    }
+
+
+    /* ======== HOME ====== */
+    .Contenedor{
+        display: block;
+    }
+
+    /* ====== NAVEGACIÓN LEFT ====== */
+
+        .Contenedor .Contenedor_Dos {
+            width: 100%;
+            height: 80px;
+            margin-top: 0;
+        }
+    
+
+        .navegacion-left {
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            display: flex;
+            padding: 0;
+            justify-content:center;
+            bottom: 0%;
+            background-color: rgba(10, 10, 10, 0.189);
+            z-index: 1000;
+            
+        }
+
+        .navegacion--left-Barra{
+            width: 4px;
+            height: 25px;
+        }
+
+        .Activo{
+            height: 40px;
+        }
+
+    /* ====== CONENIDO HOME====== */
+
+    .Contenedor {
+        width: 100%;
+    }
+
+    .Contenedor .Contenedor_Uno{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -20%;
+    }
+
+    .Contenedor_Uno .Img_Uno_Fondo{
+        width: 770px;
+        left: -30px;
+        top: -150px;
+        
+    }
+
+    .Contendor_Uno_Home{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .Contendor_Uno_Home_Animacion{
+        width: 100%;
+        position: relative;
+        position: absolute;
+        top: 0;
+        z-index: -100;
+
+    }
+
+    .Contendor_Uno_Home_Animacion .Img_Dos_Luna{
+        width: 320px;
+        left: 200px;
+        top: 200px;
+    }
+
+    .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Uno{
+        width: 300px;
+        top: 40%;
+        left: -5%;
+    }
+
+    .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Dos{
+        width: 400px;
+        top: 35%;
+        left: 35%;
+      }
+
+      .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Uno{
+        width: 350px;
+        top: 87%;
+        left: 55%;
+      }
+
+      .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Dos{
+        width: 300px;
+        top: 90%;
+        left: 0;
+      }
+
+      .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Tres{
+        width: 200px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+      }
+
+    .Contenido{
+       
+        text-align: center;
+        margin: 450px 2% 15% 2%;
+        height: auto;
+    }
+
+    .contenido-barras{
+        width: 400px;
+    }
+
+    .cb-Uno{
+        margin: 50px 0 20px 20%;
+      
+    }
+    .cb-Dos{
+        width: 200px;
+        margin: 0 0 25px 35%;
+    }
+
+    .Contenido_Prev_Noticias {
+        width: 100%;
+        height: 300px;
+        margin: 0 2%;
+        position: relative;
+    }
+
+    .Contenido_Prev_Noticias_Uno{
+        width: 85%;
+    }
+      
+      .Contenido_Prev_Noticias_Uno img {
+        width: 100%;
+      }
+      
+      .Contenido_Prev_Noticias_Uno_gb{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      .Contenido_Prev_Noticias_Uno_Titulo{
+       
+        padding: 30% 1%;
+      }
+      
+      .Contenido_Prev_Noticias_Uno_Titulo h1{
+        font-size: 1rem;
+      }
+
+      
+    /*====== Contenido Noticias ======*/
+    .Contendor_Dos_Noticias{
+        height: auto;
+        margin-top: -40%;
+    }
+
+    .Contendor_Dos{
+        height: auto;
+    }
+
+    .Contendor_Dos_Noticias_Contenido{
+        margin-top: 45%;
+        text-align: center;
+    }
+
+    .Contendor_Dos .Img_Uno_Fondo{
+        width: 280%;
+        top: 50%;
+        left: 0%;
+    }
+
+    .Contendor_Dos_Noticias_new{
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    /* ====== TOP ====== */
+
+    .Contenedor_Top{
+        width: 98%;
+      }
+
+      .Contenedor_Top_Contenedor{
+      
+        margin-bottom: 10%;
+    }
+    .Contenedor_Top_Contenido{
+        display: block;
+        width: 96%;
+    }
+
+    .CDNC{
+        margin-top: 5%;
+    }
+
+    .Contenedor_Top_View{
+        padding: 0;
+        width: 100%;
+        margin:  2%;
+        height: auto;
+    }
+
+    .CTCV{
+        display: none;
+    }
+
+    /*====== Contenido Otro Mas ======*/
+
+    .View_Noticias_Imagen img{
+        height: 400px;
+        margin-top: -12%;
+        margin-left: 0;
+    }
+
+    .View_Noticias_Imagen_gb {
+        width: 100%;
+        height: 300px;
+        margin-top: 22%;
+        margin-left: 0;
+    }
+
+    .View_Noticias_Imagen h1 {
+        font-size: 1.2em;
+    }
+
+    .View_Noticias_Contenido_Info{
+        width: 100%;
+    }
+
+    .View_Noticias_Contenido{
+        display: block;
+        width: 100%;
+    }
+
+    .View_Noticias_Contenido_Uno{
+        width: 89%;
+        
+    }
+
+    .View_Noticias_Contenido_Dos{
+        width: 90%;
+        height: auto;
+    }
+
+    .Contendor_Dos_Noticias_Mini,.Contendor_Dos_Noticias_Mini img,.Contendor_Dos_Noticias_Mini_gb{
+        height: 250px;
+    }
+
+      
+
+
+
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1050px) {
+
+    .menu .menu-Iconos{
+        position: relative;
+        
+    }
+
+    .Reproductor{
+        width: 350px;
+        position: absolute;
+        top: 100%;
+        left: -30%;
+    }
+
+    .volumen{
+        display: none;
+    }
+    
+
+    /* Menu oculto*/
+    .menu-Oculto ul{
+        margin-top: 10%;
+    }
+
+    .menu-Oculto ul li{
+        font-size: 3.5rem;
+    }
+
+
+    /* ====== CONENIDO HOME====== */
+    
+    .Contenedor {
+        width: 100%;
+    }
+
+    .Contenedor .Contenedor_Uno{
+        width: 100%;
+        position: relative;
+    }
+
+
+    .Contendor_Uno_Home{
+        width: 100%;
+        height: auto;
+    }
+
+    .Contenedor_Uno .Img_Uno_Fondo{
+        width: 900px;
+        left: 150px;
+        top: -100px;
+    }
+
+    
+
+    .Contendor_Uno_Home_Animacion{
+        width: 100%;
+        position: relative;
+    }
+
+    .Contendor_Uno_Home_Animacion .Img_Dos_Luna{
+        width: 350px;
+        left: -70px;
+        top: 220px;
+    }
+
+    .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Uno{
+        width: 350px;
+        top: 10%;
+        left: -40%;
+    }
+
+    .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Dos{
+        width: 400px;
+        top: 35%;
+        left: 40%;
+      }
+
+      .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Uno{
+        width: 350px;
+        top: 67%;
+        left: 15%;
+      }
+
+      .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Dos{
+        width: 250px;
+        top: 60%;
+        left: -45%;
+      }
+
+      .Contendor_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Tres{
+        display: none;
+      }
+
+
+      .Contendor_Dos_Noticias{
+        height: auto;
+        margin-top: -30%;
+    }
+
+    .Contendor_Dos{
+        height: auto;
+    }
+
+    .Contendor_Dos_Noticias_Contenido{
+        margin-top: 45%;
+        text-align: center;
+    }
+
+    .Contendor_Dos .Img_Uno_Fondo{
+        width: 280%;
+        top: 50%;
+        left: 0%;
+    }
+
+    .Contendor_Dos_Noticias_new{
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .Noticias_new_View_Dos_titulo h1{
+        font-size: 1.1em;
+      }
+      
+      .Noticias_new_View_Dos_titulo h2{
+        font-size: 1.2em;
+      }
+
+
+    /* ====== TOP ====== */
+
+    .Contenedor_Top{
+        width: 90%;
+    }
+
+    .Contenedor_Top_Contenedor{
+        display: block;
+        width: 85%;
+    }
+    .Contenedor_Top_Contenido{
+        display: block;
+        width: 96%;
+    }
+
+    .CDNC{
+        margin-top: 15%;
+    }
+
+    .Contenedor_Top_View{
+        padding: 0;
+        width: 100%;
+        margin:  2%;
+        height: auto;
+    }
+
+    
+}
+
+
+@media (min-width: 1700px) {
+
+    .menu-Oculto ul li{
+        margin-top: 40px;
+        font-size: 6.8rem;
+    }
+
+    .Portada_Uno_Home .Contenido h1, .Portada_Uno_Home .Contenido h2 , .Portada_Uno_Home .Contenido h3 {
+        font-size: 10rem;
+        z-index: 1000;
+    }
+      
+      
+    .Portada_Uno_Home .Contenido h2 {
+      font-size: 5rem;
+    }
+    
+    .Portada_Uno_Home .Contenido .h2mas {
+      font-size: 4.3rem;
+    }
+    
+    .Portada_Uno_Home .Contenido h3 {
+      font-size: 2rem;
+      z-index: 1000;
+    }
+    
+        
+    .Portada_Uno_Home_Animacion .Img_Uno_Fondo {
+      width: 1400px;
+      top: -170px;
+      left: -180px;
+      
+    }
+    
+    .Portada_Uno_Home_Animacion .Img_Dos_Luna {
+      width: 550px;
+      top: 250px;
+      left: 260px;
+    }
+    
+    .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Uno {
+      width: 600px;
+      top: 100px;
+      left: 550px;
+    }
+    
+    .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Dos {
+      width: 500px;
+      top: 100px;
+      left: -20px;
+    }
+    
+    .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Uno {
+      width: 700px;
+      top: 520px;
+      left: -90px;
+    }
+    
+    .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Dos {
+      width: 650px;
+      position: absolute;
+      top: 650px;
+      left: 500px;
+      transform: rotate(180deg);
+    }
+    
+    .Portada_Uno_Home_Animacion .Img_Tres_Nueve_Oscura_Tres {
+      width: 300px;
+      position: absolute;
+      top: 430px;
+      left: 650px;
+    
+    }
+ }

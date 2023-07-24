@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/Img/favicon.png">
+    <title>Administrador 4toRadio</title>
+    <link rel="stylesheet" href="./assets/Admin.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <script src="https://kit.fontawesome.com/db668a6a94.js" crossorigin="anonymous"></script>
+    <script src="./assets/Admin.js"></script>
+    <script src="./tinymce/tinymce.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.css"/>
+ 
+    
+    
+</head>
+<body>
+    <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+        <i class=" user uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+        <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4 user">
+          <img
+               class="rounded-pill img-fluid"
+               width="65"
+               src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance"
+               alt="">
+          <div class="ms-2 user">
+            <h5 class="fs-6 mb-0">
+              <a class="text-decoration-none" href="#">Jone Doe</a>
+            </h5>
+            <p class="mt-1 mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      
+        <div class="search position-relative text-center px-4 py-3 mt-2">
+          <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
+          <i class="fa fa-search position-absolute d-block fs-6"></i>
+        </div>
+      
+        <ul class="categories list-unstyled">
+          <li class="" onclick="Menu(1)">
+            <i class="fa-solid fa-house-user" ></i><a href="#" class="Responsiveli"> Inicio</a>
+            
+          </li>
+          <li class="" onclick="Menu(2)">
+            <i class="fa-solid fa-newspaper "></i><a href="#" class="Responsiveli"> Noticias</a>
+           
+          </li>
+          <li class="" onclick="Menu(3)">
+            <i class="fa-solid fa-calendar"></i><a href="#" class="Responsiveli"> Programas</a>
+           
+          </li>
+          <li class="" onclick="Menu(4)">
+            <i class="fa-brands fa-spotify"></i><a href="#" class="Responsiveli"> Playlist</a>
+          </li>
+          <li class="" onclick="Menu(5)">
+            <i class="fa-solid fa-users"></i><a href="#" class="Responsiveli"> Staff</a>
+          </li>
+          <li class="" onclick="Menu(6)">
+            <i class="fa-solid fa-gear"></i><a href="#" class="Responsiveli"> Configuración</a>
+          </li>
+          
+        </ul>
+      </aside>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mx-2">
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="uil-bars text-white"></i>
+            </button>
+            <a class="navbar-brand" href="#"><span class="main-color">4toRadio </span> Admin</a>
+          </div>
+          <div class="collapse navbar-collapse" id="toggle-navbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i data-show="show-side-navigation1" class="uil-bars show-side-btn"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section id="wrapper" class="Home">
+        <div class="p-4">
+          <div class="welcome">
+            <div class="content rounded-3 p-3">
+              <h1 class="fs-3">Bienvenido</h1>
+              <p class="mb-0">¡Hola, bienvenido al dashboard de 4toRadio!</p>
+            </div>
+          </div>
+          <section class="statistics mt-4">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+                  <i class=" fa-solid fa-photo-film fs-2 text-center bg-primary rounded-circle"></i>
+                
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0 NumeroFotos"></h3> <span class="d-block ms-2">Fotos</span>
+                    </div>
+                    <p class="fs-normal mb-0">Guardadas en nuestro servidor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+                  <i class="fa-solid fa-newspaper fs-2 text-center bg-danger rounded-circle"></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0 NumeroNoticias"></h3> <span class="d-block ms-2">Noticias</span>
+                    </div>
+                    <p class="fs-normal mb-0">Publicadas hasta el momento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center p-3">
+                  <i class="fa-brands fa-spotify fs-2 text-center bg-success rounded-circle"></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0 NumeroPlaylist"></h3> <span class="d-block ms-2">Playlist</span>
+                    </div>
+                    <p class="fs-normal mb-0">Son las playlist compartidas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="admins mt-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box">
+                  <!-- <h4>Admins:</h4> -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148906966/small/1501685402/enhance"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+                 
+                 
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box">
+                  <!-- <h4>Moderators:</h4> -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907114/small/1501685404/enhance"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="statis mt-4 text-center">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="box bg-primary bg-danger p-3">
+                  <i class="fa-solid fa-radio"></i>
+                  <h3>Servidor Radio</h3>
+                  <a  class="Enlace lead" href="http://radio30.Virtualtronics.com:2199" target="_blank" >Acceso al panel de control</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="box bg-primary  p-3">
+                  <i class="fa-solid fa-tower-broadcast"></i>
+                  <h3>Pro. Transmisión</h3>
+                  <a  class="Enlace lead" href="https://www.youtube.com/watch?v=WNQdzuAouvI" target="_blank" >Tutorial para trasmitir en vivo</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <div class="box bg-warning p-3">
+                  <i class="uil-shopping-cart"></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Product sales</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="box bg-success p-3">
+                  <i class="uil-feedback"></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Transactions</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+<!-- ======================================= NOTICIAS =================================== -->
+      <section class="Noticias Contenedor hide">
+        <h3 class="text-muted text-center mt-4">Noticias</h3>
+        <div class="p-4">
+          <section class="statistics mt-6">
+            <div class="row">
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-primary ml-4" onclick="ModalNoticia(1);"><i class="fa-solid fa-plus s-2" ></i> Crear Noticia</button>
+              </div>
+              <div class="col-lg-12">
+                <div class="welcome mt-4">
+                  <div class="content rounded-3 p-3">
+                    <div class="tableFixHead">
+                      <table class="table table-striped table-dark table-hover" style="width: 100%; border-collapse: collapse;"
+                        id="tablaNoticias">
+                        <thead >
+                          <tr style="border-bottom: dashed 1px #dedede;" class="text-center">
+                            <th class="text-center hide">Id</th>
+                            <th class="text-center" style="width: 30%;">Título</th>
+                            <th class="text-center">Fecha</th>
+                            <th class="text-center">Categoria</th>
+                            <th class="text-center">Autor</th>
+                            <th class="text-center">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+<!-- ======================================= PROGRAMAS =================================== -->
+      <section class="Programas Contenedor hide">
+        <h3 class="text-muted text-center mt-4">Programas</h3>
+        <div class="p-4">
+          <section class="statistics">
+            <div class="row">
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-primary ml-4" onclick="ModalProgramas(1);"><i
+                    class="fa-solid fa-plus s-2"></i>
+                  Agregar Programa</button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="welcome mt-4">
+                <div class="content rounded-3 p-3">
+                  <div class="tableFixHead">
+                    <table class="table table-striped table-dark table-hover" style="width: 100%; border-collapse: collapse;"
+                      id="tablaPrograma">
+                      <thead>
+                        <tr style="border-bottom: dashed 1px #dedede;" class="text-center">
+                          <th class="text-center hide">Id</th>
+                          <th class="text-center">Nombre</th>
+                          <th class="text-center">Día</th>
+                          <th class="text-center">Horario</th>
+                          <th class="text-center">Acción</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ======================================= PLAYLISTS =================================== -->
+      <section class="Playlist Contenedor hide">
+        <h3 class="text-muted text-center mt-4">Playlist</h3>
+        <div class="p-4">
+          <section class="statistics mt-6">
+            <div class="row">
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-primary ml-4" onclick="ModalPlaylist(1);"><i class="fa-solid fa-plus s-2" ></i> Agregar Playlist</button>
+              </div>
+              <div class="col-lg-12">
+                <div class="welcome mt-4">
+                  <div class="content rounded-3 p-3">
+                    <div class="tableFixHead">
+                      <table class=" table-hover table-striped table-condensed" style="width: 100%; border-collapse: collapse;"
+                        id="tablaPlaylist">
+                        <thead >
+                          <tr style="border-bottom: dashed 1px #dedede;" class="text-center">
+                            <th class="text-center hide">Id</th>
+                            <th class="text-center">Nombre</th>
+                            <th class="text-center">Enlace</th>
+                            <th class="text-center">Fecha</th>
+                            <th class="text-center">Activo</th>
+                            <th class="text-center">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- ======================================= STAFF =================================== -->
+      <section class="Staff Contenedor hide">
+        <h3 class="text-muted text-center mt-4">Staff</h3>
+        <div class="p-4">
+          <section class="statistics mt-6">
+            <div class="row">
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-primary ml-4" onclick="ModalStaff(1);"><i class="fa-solid fa-plus s-2" ></i> Agregar Staff</button>
+              </div>
+              <div class="col-lg-12">
+                <div class="welcome mt-4">
+                  <div class="content rounded-3 p-3">
+                    <div class="tableFixHead">
+                      <table class=" table-hover table-striped table-condensed" style="width: 100%; border-collapse: collapse;"
+                        id="tablaStaff">
+                        <thead >
+                          <tr style="border-bottom: dashed 1px #dedede;" class="text-center">
+                            <th class="text-center hide">Id</th>
+                            <th class="text-center">Foto</th>
+                            <th class="text-center">Nombre</th>
+                            <th class="text-center">Cargo</th>
+                            <th class="text-center">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- ======================================= Configuración =================================== -->
+      <section class="Configuracion Contenedor hide">
+        <h3 class="text-muted text-center mt-4">Configuración</h3>
+        <div class="p-4">
+          <section class="statistics mt-4">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+                  <i class="fa-solid fa-radio fs-2 text-center bg-danger rounded-circle"></i>
+                
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">Servidor de la Radio</h3> <span class="d-block ms-2"></span>
+                    </div>
+                    <a  class="Enlace" href="http://radio35.Virtualtronics.com:2199" target="_blank" >Acceso al panel de control</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+                  <i class="fa-solid fa-newspaper fs-2 text-center bg-danger rounded-circle"></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">34</h3> <span class="d-block ms-2">Noticas</span>
+                    </div>
+                    <p class="fs-normal mb-0">Publicadas hasta el momento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box d-flex rounded-2 align-items-center p-3">
+                  <i class="fa-brands fa-spotify fs-2 text-center bg-success rounded-circle"></i>
+                  <div class="ms-3">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">5</h3> <span class="d-block ms-2">Playlist</span>
+                    </div>
+                    <p class="fs-normal mb-0">Son las playlist compartidas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="admins mt-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box">
+                  <!-- <h4>Admins:</h4> -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148906966/small/1501685402/enhance"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+                 
+                 
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box">
+                  <!-- <h4>Moderators:</h4> -->
+                  <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
+                    <div class="img">
+                      <img class="img-fluid rounded-pill"
+                           width="75" height="75"
+                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907114/small/1501685404/enhance"
+                           alt="admin">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="statis mt-4 text-center">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="box bg-primary p-3">
+                  <i class="uil-eye"></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Page views</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="box bg-danger p-3">
+                  <i class="uil-user"></i>
+                  <h3>245</h3>
+                  <p class="lead">User registered</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <div class="box bg-warning p-3">
+                  <i class="uil-shopping-cart"></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Product sales</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="box bg-success p-3">
+                  <i class="uil-feedback"></i>
+                  <h3>5,154</h3>
+                  <p class="lead">Transactions</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+
+<!-- ======================================= MODALES =================================== -->
+
+<!-- =========== Noticas ============== -->
+
+<div class="modal fade" id="ModalNoticias" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Crear Noticia</h5>
+        <i class="fa-solid fa-x cursor" onclick="ModalNoticia(2);"></i>
+      </div>
+      <div class="modal-body" style="max-height: calc(97vh - 200px); overflow-y: auto;">
+        <input type="text" class="inputIdNoticia hide">
+        <div class="well well-sm ContenedorGris">
+          <p><i class="fa fa-info-circle mr-4"></i><i>¡A continuación se debe diligenciar la información acorde
+              a lo que se pide en los campos!</i></p>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            
+            <div class="col-md-12">
+              <label>Título</label>
+              <input type="text" class="form-control TextTitulo" id="TextTitulo"  placeholder="Título de la noticia">
+            </div>
+            <div class="col-md-4 mt-4">
+              <label>Fecha</label>
+              <input type="date" class="form-control TextFecha" id="TextFecha" placeholder="Fecha de la publicación">
+            </div>
+            <div class="col-md-8 mt-4">
+              <label>Categoría</label>
+              <select class="form-select ddl ddlCategoria" id="ddlCategoria" >
+                <option value="0">Seleccione</option>
+                <option value="1">Noticias</option>
+                <option value="2">Videos</option>
+                <option value="3">Fotos</option>
+              </select>
+            </div>
+            
+          </div>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="Iconos" onclick="CargarImagen(1)" data-toggle="tooltip" title=""
+                data-original-title="Selecciona un nuevo miembro al órgano">
+                <i class="fa-solid fa-image CargarImagen"></i>
+                <p>Cargar Imagen</p>
+              </div>
+              <input type="file" class="inputfileNoticias hide" id="inputfileNoticias" onchange="readURL(this);getBase64('inputfileNoticias');" accept="image/*">
+            </div>
+            <div class="col-md-2">
+              <img id="ImagenMuestraN" class="ImagenMuestraN" src="https://www.quicideportes.com/assets/images/custom/no-image.png" alt="Imagen" />
+            </div>
+          </div>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-12">
+              <label>Contenido</label>
+              <textarea class="form-control" id="ContenidoNoticias" class="ContenidoNoticias" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_GuardarNoticia" onclick="GuardarNoticias(1);">Publicar</button>
+        <button type="button" class="btn btn-primary btn_ActualizarNoticia" onclick="GuardarNoticias(2);">Actualizar</button>
+        <button type="button" class="btn btn-secondary" onclick="ModalNoticia(2);">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- =========== Programas ============== -->
+
+<div class="modal fade" id="ModalProgramas" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar Programa</h5>
+        <i class="fa-solid fa-x cursor" onclick="ModalProgramas(2);"></i>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="inputIdPrograma hide">
+        <div class="well well-sm ContenedorGris">
+          <p><i class="fa fa-info-circle mr-4"></i><i>¡A continuación se debe diligenciar la información acorde a lo que se pide en los campos!</i></p>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-12">
+              <label>Nombre</label>
+              <input type="text" class="form-control TextNombrePrograma" id="TextNombrePrograma"  placeholder="Nombre del programa">
+            </div>
+            <div class="col-md-12 mt-4">
+              <label>Día</label>
+              <select class="form-select ddl ddlDia" id="ddlDia" >
+                <option value="0">Seleccione</option>
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="4">Jueves</option>
+                <option value="5">Viernes</option>
+                <option value="6">Sábado</option>
+                <option value="7">Domingo</option>
+              </select>
+            </div>
+            <div class="col-md-4 mt-4">
+              <label>Hora inicial</label>
+              <input type="time" class="form-control TextHoraInicial" id="TextHoraInicial"  placeholder="Nombre del programa">
+            </div>
+            <div class="col-md-4 mt-4">
+              <label>Hora Final</label>
+              <input type="time" class="form-control TextHoraFinal" id="TextHoraFinal"  placeholder="Nombre del programa">
+            </div>
+          </div>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="Iconos" onclick="CargarImagen(2)" data-toggle="tooltip" title=""
+                data-original-title="Selecciona un nuevo miembro al órgano">
+                <i class="fa-solid fa-image CargarImagen"></i>
+                <p>Cargar Imagen</p>
+              </div>
+              <input type="file" class="inputfileProgramas hide" id="inputfileProgramas" onchange="readURL(this);getBase64('inputfileProgramas');"  accept="image/*">
+            </div>
+            <div class="col-md-2">
+              <img id="ImagenMuestraP" class="ImagenMuestraP" src="https://www.quicideportes.com/assets/images/custom/no-image.png" alt="Imagen" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_GuardarPrograma" onclick="GuardarPrograma(1);">Agregar</button>
+        <button type="button" class="btn btn-primary btn_ActualizarPrograma" onclick="GuardarPrograma(2);">Actualizar</button>
+        <button type="button" class="btn btn-secondary" onclick="ModalProgramas(2);">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========== PlayList ============== -->
+
+<div class="modal fade" id="ModalPlaylist" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar Playlist</h5>
+        <i class="fa-solid fa-x cursor" onclick="ModalPlaylist(2);"></i>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="inputIdPlaylist hide">
+        <div class="well well-sm ContenedorGris">
+          <p><i class="fa fa-info-circle mr-4"></i><i>¡A continuación se debe diligenciar la información acorde a lo que se pide en los campos!</i></p>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-12">
+              <label>Nombre</label>
+              <input type="text" class="form-control TextNombrePlaylist" id="TextNombrePlaylist"  placeholder="Nombre de la playlist">
+            </div>
+            <div class="col-md-12">
+              <label>Enlace</label>
+              <input type="text" class="form-control TextEnlacePlaylist" id="TextEnlacePlaylist"  placeholder="Enlace o URL de Spotify">
+            </div>
+          </div>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="Iconos" onclick="CargarImagen(3)">
+                <i class="fa-solid fa-image CargarImagen"></i>
+                <p>Cargar Imagen</p>
+              </div>
+              <input type="file" class="inputfilePlaylist hide" id="inputfilePlaylist" onchange="readURL(this);getBase64('inputfilePlaylist');"  accept="image/*">
+            </div>
+            <div class="col-md-2">
+              <img  class="ImagenMuestraPLA" id="ImagenMuestraPLA" src="https://www.quicideportes.com/assets/images/custom/no-image.png" alt="Imagen" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_GuardarPlaylist" onclick="GuardarPlaylist(1);">Agregar</button>
+        <button type="button" class="btn btn-primary btn_ActualizarPlaylist" onclick="GuardarPlaylist(2);">Actualizar</button>
+        <button type="button" class="btn btn-secondary" onclick="ModalPlaylist(2);">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- =========== Staff ============== -->
+
+<div class="modal fade" id="ModalStaff" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar Staff</h5>
+        <i class="fa-solid fa-x cursor" onclick="ModalStaff(2);"></i>
+      </div>
+      <div class="modal-body">
+        <div class="well well-sm ContenedorGris">
+          <p><i class="fa fa-info-circle mr-4"></i><i>¡A continuación se debe diligenciar la información acorde a lo que se pide en los campos!</i></p>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-12">
+              <label>Nombre:</label>
+              <input type="text" class="form-control TextNombreStaff" id="TextNombreStaff"  placeholder="Nombre del nuevo personal">
+            </div>
+            <div class="col-md-12">
+              <label>Rol:</label>
+              <select class="form-select ddl ddlCargoStaff" id="ddlCargoStaff" >
+                <option value="0">Seleccione</option>
+                <option value="1">Administrador</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label>Contraseña:</label>
+              <input type="password" class="form-control TextClaveCargo" id="TextClaveCargo"  placeholder="Digite contraseña">
+            </div>
+          </div>
+        </div>
+        <div class="well well-sm ContenedorGris">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="Iconos" onclick="CargarImagen(4)">
+                <i class="fa-solid fa-image CargarImagen"></i>
+                <p>Cargar Foto</p>
+              </div>
+              <input type="file" class="inputfileStaff hide" id="inputfileStaff" onchange="readURL(this);getBase64('inputfileStaff');"  accept="image/*">
+            </div>
+            <div class="col-md-2">
+              <img class="ImagenMuestraStaff" id="ImagenMuestraStaff" src="https://empodero.s3.us-east-2.amazonaws.com/users/default.jpg" alt="Imagen" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_GuardarStaff" onclick="GuardarStaff(1);">Agregar</button>
+        <button type="button" class="btn btn-primary btn_ActualizarStaff" onclick="GuardarStaff(2);">Actualizar</button>
+        <button type="button" class="btn btn-secondary" onclick="ModalStaff(2);">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spinnerBackdrop" style="display: none;">
+  <div class="spinnerContent">
+      <div class="spinnerItem">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+      <div id="MensajeDeEspera">Por favor espere</div>
+  </div>
+</div>
+
+<!-- ==================================== FIN MODALES ================================== -->
+
+      <!-- SCRIPTS -->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../assets/Js/jquery.js"></script>
+      
+      <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
+      <script src="./assets/AdminDos.js"></script>
+      <script src="./app/Administrador.js"></script>
+      <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
+     
+
+      
+     
+    
+</body>
+</html>

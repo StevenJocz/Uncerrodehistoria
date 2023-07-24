@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+
+RewriteEngine On 
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^Noticias/([0-9]*)/(.*)$ Noticias.php?id=$1&enlace=$2
